@@ -1,0 +1,25 @@
+:root {
+    // text color
+    --primary-text-color: #212121;
+    --additional-text-color: #757575;
+    --accent-color: #2196f3;
+    --accent-bgr-color: #188ce8;
+    --primary-white-color: #ffffff;
+    --text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --contacts-footer-color: rgba(255, 255, 255, 0.6);
+    --text-logo: 000000;
+    --button-portfolio: #f5f4fa;
+    --icon-color: #afb1b8;
+    --footer-background: #2f303a;
+
+    // animation
+    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* flex-basis */
+    --indent: 30px;
+    --items: 3;
+
+    /* fonts */
+    --main-font: Roboto, sans-serif;
+    --secondary-font: Relaway, sans-serif;
+}

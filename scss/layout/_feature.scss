@@ -1,0 +1,31 @@
+.feature {
+    display: flex;
+    gap: 30px;
+}
+.feature__item {
+    flex-basis: 270px;
+}
+.feature__aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--button-portfolio);
+}
+.feature__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+}
+.feature__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--additional-text-color);
+}

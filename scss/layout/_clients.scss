@@ -1,0 +1,36 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-list {
+    display: flex;
+    gap: 30px;
+}
+
+.clients-list__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border-color var(--animation);
+
+&:hover,
+&:focus {
+    border-color: var(--accent-color);
+    }
+}
+
+.client-list__icon {
+    fill: var(--icon-color);
+    transition: fill var(--animation);
+
+.clients-list__link:hover &,
+.clients-list__link:focus & {
+    fill: var(--accent-color);
+    }
+}
+
