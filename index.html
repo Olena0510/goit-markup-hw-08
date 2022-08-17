@@ -27,7 +27,17 @@
     <header class="header">
       <div class="header-container container">
         <a href="/" class="logo logo--link list"> <span class="logo__span">Web</span>Studio</a>
-        <nav class="nav nav--header">
+          <button type="button" class="nav-btn " 
+          data-menu-button 
+          aria-expanded="false" aria-controls="menu-container">
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="icon-close_40px" href="./images/icons.svg#close_40px"></use>
+              <use class="icon-menu_40px" href="./images/icons.svg#menu_40px"></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <div class="navigation">
+              <nav class="nav nav--header">
           <ul class="nav__list list">
             <li class="nav__item nav__item--relative">
               <a href="" class="nav__link nav__link--current list">Студия</a>
@@ -41,7 +51,9 @@
               <a href="" class="nav__link nav__link--portfolio list">Контакты</a>
             </li>
           </ul>
-        </nav>
+          </nav>
+          </div>
+        <div class="contacts">
         <ul class="header-contacts list">
           <li class="header-contacts__item list">
             <a class="header-contacts__mail list" href="mailto:info@devstudio.com">
@@ -58,7 +70,23 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
-      </div>
+        </div>
+          <ul class="mobile-social list">
+            <li class="mobile-social-item">
+              <a href="" class="mobile-social-link">Instagram</a>
+            </li>
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link">Twitter</a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link">Facebook</a>
+              </li>
+              <li class="mobile-social-item">
+                <a href="" class="mobile-social-link">LinkedIn</a>
+              </li>
+          </ul>
+        </div>
+        </div>
     </header>
     <main>
       <!--Секция герой-->
@@ -131,8 +159,13 @@
           <ul class="work-list list">
             <li class="work-item">
               <img
+               srcset="
+              ./images/work/work-1@1x_370.jpg 370w,
+              ./images/work/work-1@2x_740.jpg 740w
+              "
+              sizes="(min-width: 1200px) 370px, 100vw"
                 class="work-item__img"
-                src="./images/box1.jpg"
+                src="./images/work/work-1@1x_370.jpg"
                 alt="Десктопные приложения"
                 width="370"
                 height="294"
@@ -143,8 +176,13 @@
             </li>
             <li class="work-item">
               <img
+                srcset="
+              ./images/work/work-2@1x_370.jpg 370w,
+              ./images/work/work-2@2x_740.jpg 740w
+              "
+              sizes="(min-width: 1200px) 370px, 100vw"
                 class="work-item__img"
-                src="./images/box2.jpg"
+                src="./images/work/work-2@1x_370.jpg"
                 alt="Мобильные приложения"
                 width="370"
                 height="294"
@@ -155,8 +193,13 @@
             </li>
             <li class="work-item">
               <img
+                srcset="
+              ./images/work/work-3@1x_370.jpg 370w,
+              ./images/work/work-3@2x_740.jpg 740w
+              "
+              sizes="(min-width: 1200px) 370px, 100vw"
                 class="work-item__img"
-                src="./images/box3.jpg"
+                src="./images/work/work-3@1x_370.jpg"
                 alt="Дизайнерские решения"
                 width="370"
                 height="294"
@@ -175,11 +218,20 @@
           <ul class="team list">
             <li class="team__item">
               <img
+              srcset="
+              ./images/team/img-1@1x_270.jpg 270w,
+              ./images/team/img-1@1x_354.jpg 354w,
+              ./images/team/img-1@1x_450.jpg 450w,
+              ./images/team/img-1@2x_540.jpg 540w,
+              ./images/team/img-1@2x_708.jpg 708w,
+              ./images/team/img-1@2x_900.jpg 900w
+              "
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw"
                 class="team__img"
-                src="./images/img1.jpg"
+                src="./images/team/img-1@1x_270.jpg"
                 alt="Фотография Игоря Демьяненко"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
               <div class="team__box">
                 <h3 class="team__box__title">Игорь Демьяненко</h3>
@@ -241,12 +293,20 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/img2.jpg"
+              <img srcset="
+                  ./images/team/img-2@1x_270.jpg 270w,
+                  ./images/team/img-2@1x_354.jpg 354w,
+                  ./images/team/img-2@1x_450.jpg 450w,
+                  ./images/team/img-2@2x_540.jpg 540w,
+                  ./images/team/img-2@2x_708.jpg 708w,
+                  ./images/team/img-2@2x_900.jpg 900w
+              " 
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw" 
+              class="team__img"
+                src="./images/team/img-2@1x_270.jpg"
                 alt="Фотография Ольги Репиной"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
               <div class="team__box">
                 <h3 class="team__box__title">Ольга Репина</h3>
@@ -308,12 +368,20 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/img3.jpg"
+              <img srcset="
+                      ./images/team/img-3@1x_270.jpg 270w,
+                      ./images/team/img-3@1x_354.jpg 354w,
+                      ./images/team/img-3@1x_450.jpg 450w,
+                      ./images/team/img-3@2x_540.jpg 540w,
+                      ./images/team/img-3@2x_708.jpg 708w,
+                      ./images/team/img-3@2x_900.jpg 900w
+              " 
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw" 
+              class="team__img"
+                src="./images/team/img-3@1x_270.jpg"
                 alt="Фотография Николая Тарасова"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
               <div class="team__box">
                 <h3 class="team__box__title">Николай Тарасов</h3>
@@ -375,12 +443,20 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/img4.jpg"
+            <img srcset="
+                        ./images/team/img-4@1x_270.jpg 270w,
+                        ./images/team/img-4@1x_354.jpg 354w,
+                        ./images/team/img-4@1x_450.jpg 450w,
+                        ./images/team/img-4@2x_540.jpg 540w,
+                        ./images/team/img-4@2x_708.jpg 708w,
+                        ./images/team/img-4@2x_900.jpg 900w
+                          "
+                 sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 100vw" 
+                 class="team__img"
+              src="./images/team/img-4@1x_270.jpg"
                 alt="Фотография Михаила Ермакова"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
               <div class="team__box">
                 <h3 class="team__box__title">Михаил Ермаков</h3>
@@ -552,7 +628,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="footer-box-call">
           <p class="footer-call">присоединяйтесь</p>
           <ul class="footer-social">
             <li class="footer-social__item">
@@ -675,5 +751,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

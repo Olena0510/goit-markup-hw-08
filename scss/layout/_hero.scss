@@ -1,14 +1,55 @@
 .hero {
-    height: 600px;
-    max-width: 1600px;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url("../images/image-hero/hero.jpg");
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+
+
+    @media screen and (max-width: 767px){
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/hero/hero@1x_s.jpg");    
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/hero/hero@2x_s.jpg");
+    }
+
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+
+@media screen and (min-width:768px){
+
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+            url("../images/hero/hero@1x_m.jpg");
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/hero/hero@2x_m.jpg");
+}
+
+     padding-top: 122px;
+     padding-bottom: 114px;
+}
+
+@media screen and (min-width:1200px){
+
+background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url("../images/hero/hero@1x_l.jpg");
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url("../images/hero/hero@2x_l.jpg");
+    }
+
+    height: 600px;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 }
 
 .hero--section {
@@ -22,16 +63,36 @@
 
 .hero-container__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
     letter-spacing: 0.06em;
+    text-align: center;
     text-transform: uppercase;
     color: var(--primary-white-color);
-    max-width: 696px;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+
+    @media screen and (max-width:767px){
+       font-size: 26px;
+       line-height: 1.61;
+       max-width: 360px;
+    }
+
+
+
+    @media screen and (min-width: 768px){
+        font-size: 26px;
+        line-height: 1.61;
+        max-width: 360px;
+    }
+
+
+    @media screen and (min-width: 1200px){
+   
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+    }
+   
 }
 
 .hero-btn {
@@ -48,11 +109,20 @@
     border: none;
     min-width: 200px;
     min-height: 50px;
-    padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     display: inline-block;
     transition: background-color var(--animation);
+
+
+    @media screen and (max-width: 1199px){
+        padding: 10px 24px;
+    }
+
+    @media screen and (min-width: 1200px){
+        padding: 10px 32px;
+    }
+
 
 &:hover,
 &:focus {

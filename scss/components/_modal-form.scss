@@ -9,6 +9,10 @@
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     margin-bottom: 12px;
+
+    @media screen and (max-width: 1200px){
+        line-height: 1.5;
+    }
 }
 .modal__series {
     margin-bottom: 20px;
@@ -99,11 +103,20 @@ textarea::placeholder {
 }
 .modal-checkbox__span {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--additional-text-color);
     user-select: none;
+
+
+    @media screen and (max-width: 1199px){
+        font-size: 12px;
+        line-height: 1.17;
+    }
+
+    @media screen and (min-width: 1200px){
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 .modal-checkbox__link {
     color: var(--accent-color);

@@ -1,13 +1,37 @@
 .portfolio-container {
-    padding-top: 94px;
-    padding-bottom: 106px;
+    @media screen and (max-width: 1199px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .portfolio-filter__list {
     display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 50px;
+
+    @media screen and (max-width: 767px){
+        flex-wrap: wrap;
+        column-gap: 8px;
+        row-gap: 15px;
+        margin-bottom: 40px;
+    }
+
+
+    @media screen and (min-width: 768px){
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px){
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 50px;
+    }
+   
 }
 .portfolio-btn {
     background-color: var(--button-portfolio);

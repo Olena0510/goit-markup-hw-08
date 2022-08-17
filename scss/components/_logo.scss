@@ -1,13 +1,39 @@
 .logo {
     color: var(--text-logo);
     font-family: var(--secondary-font);
+   
+@media screen and (max-width: 767px) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    }
+ @media screen and (min-width: 768px) {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+ }     
+@media screen and (min-width: 1200px) {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
 }
+}
 
 .logo--link {
-    margin-right: 93px;
+
+@media screen and (max-width: 767px){
+    margin-right: 286px;
+    }
+    
+
+@media screen and (min-width: 768px){
+    margin-right: 87px;
+    }
+
+
+@media screen and (min-width: 1200px){
+    margin-right: 92px;
+    }
 }
 
 .logo__span {
@@ -19,3 +45,8 @@
     display: block;
     margin-bottom: 20px;
 }
+
+
+
+
+  
