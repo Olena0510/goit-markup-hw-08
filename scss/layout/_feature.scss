@@ -10,7 +10,7 @@
 }
 .feature__item {
     @media screen and (max-width: 767px) {
-            width: 450px;
+            width: 100%;
             display: block;
             margin-bottom: 30px;
         }
@@ -33,7 +33,7 @@
     background-color: var(--button-portfolio);
 
     @media screen and (max-width: 767px){
-        width: 450px;
+        max-width: 100%;
     }
 
     @media screen and (min-width: 768px){
@@ -53,12 +53,17 @@
     text-transform: uppercase;
     color: var(--primary-text-color);
     margin-bottom: 10px;
+    width: 100%;
+    @media screen and (max-width:767px){
+       text-align: center;
+    }
 }
-
 .feature__subtitle {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--additional-text-color);
+    width: 100%;
 }
+

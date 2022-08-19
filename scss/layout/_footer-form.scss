@@ -1,4 +1,8 @@
 .footer-form-box {
+
+    @media screen and (max-width: 767px){
+        width: 100%;
+    }
     @media screen and (max-width: 1199px){
     margin: 0 auto;
     }
@@ -38,7 +42,11 @@ input::placeholder {
     background-color: transparent;
     outline: transparent;
 
-    @media screen and (max-width: 1199px){
+    @media screen and (max-width: 767px){
+        width: 100%;
+    }
+
+    @media screen and (min-width: 768px){
        width: 450px; 
     }
 

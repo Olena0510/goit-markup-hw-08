@@ -106,18 +106,19 @@ textarea::placeholder {
     letter-spacing: 0.03em;
     color: var(--additional-text-color);
     user-select: none;
-
-
     @media screen and (max-width: 1199px){
         font-size: 12px;
         line-height: 1.17;
     }
-
     @media screen and (min-width: 1200px){
         font-size: 14px;
         line-height: 1.71;
     }
+    @media screen and (max-width: 431px) {
+        font-size: 10px;
+     }
 }
+
 .modal-checkbox__link {
     color: var(--accent-color);
     text-underline-position: under;

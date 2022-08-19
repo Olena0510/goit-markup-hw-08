@@ -20,22 +20,13 @@
 }
 
 .logo--link {
-
-@media screen and (max-width: 767px){
-    margin-right: 286px;
-    }
-    
-
 @media screen and (min-width: 768px){
     margin-right: 87px;
     }
-
-
 @media screen and (min-width: 1200px){
     margin-right: 92px;
     }
 }
-
 .logo__span {
     color: var(--accent-color);
 }
