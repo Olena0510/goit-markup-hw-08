@@ -114,9 +114,18 @@ textarea::placeholder {
         font-size: 14px;
         line-height: 1.71;
     }
-    @media screen and (max-width: 431px) {
+    @media screen and (max-width: 433px) {
+        font-size: 11px;
+     }
+     @media screen and (max-width: 405px){
         font-size: 10px;
      }
+     @media screen and (max-width: 377px){
+        font-size: 9px;
+     }
+     @media screen and (max-width: 349px){
+        font-size: 7.9px;
+     }   
 }
 
 .modal-checkbox__link {

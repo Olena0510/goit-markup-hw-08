@@ -1,5 +1,8 @@
 .header {
     border-bottom: 1px solid #ececec;
+    @media screen and (max-width:767px){
+        height: 60px;
+    }
 }
 
 .header-container {
@@ -85,6 +88,9 @@
         @media screen and (max-width: 377px){
             font-size: 30px;
         }
+        @media screen and (max-width: 341px){
+            font-size: 25px;
+        }
 }
 .mobile-social{
 @media screen and (max-width: 767px){
@@ -116,6 +122,9 @@
     }
    @media screen and (max-width: 377px){
     font-size: 14px;
+   }
+   @media screen and (max-width: 344px){
+    font-size: 12px;
    }
 }
 .mobile-social-item:not(:last-child) .mobile-social-link{
